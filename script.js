@@ -5,19 +5,23 @@ let warmHugs = "Hi, I'm Olaf and I like warm hugs.";
 console.log(warmHugs.toUpperCase());
 
 //1c
-console.log(warmHugs.replace("like" , "love"));
+warmHugs = warmHugs.replace("like" , "love");
+console.log(warmHugs);
+
 
 //2a
 var beenImpaled = "Oh, look at that. I've been impaled. ";
 
 //2b
-console.log(beenImpaled.slice(-19,-1));
+beenImpaled = beenImpaled.slice(-19,-1);
+console.log(beenImpaled);
+
 
 //3a
-var dotDotDot = "...";
+let dotDotDot = "...";
 
 //3b
-var skullBones = `I don't have a skull${dotDotDot}or bones`;
+let skullBones = `I don't have a skull ${dotDotDot} or bones.`;
 
 console.log(skullBones);
 
@@ -25,9 +29,26 @@ console.log(skullBones);
 console.log(Math.PI);
 
 //5
-let randomNum = Math.random();
-
-randomNum *= 3
-
-randomNum = Math.ceil(randomNum);
+let randomNum = Math.random(); // 0 through 0.99999
+randomNum *= 3; // 0 to 2.99999
+randomNum = Math.floor(randomNum); //gets rid of decimal
+randomNum++;
 console.log(randomNum);
+
+//BONUS
+//6
+console.log(" Let It Go!".toUpperCase().repeat(2).trim())
+
+//7a
+let reindeers = "Reindeers are better than people.";
+
+//7b
+console.log(reindeers.replace ("Reindeers are better than people." , "Reindeers_are_better_than_people"));
+
+//8
+let squareRoot = Math.sqrt(2);
+console.log(squareRoot);
+
+//9
+let newRandomNumber = Math.ceil((Math.random()*17)+6);
+console.log(newRandomNumber);
